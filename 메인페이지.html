@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>메인 최종</title>
+  <style type="text/css">
+    body {
+      position: relative;
+      background-color: #FBF8EF;
+      margin: 0;
+      padding: 0;
+      font-family: "Bodoni 72", sans-serif;
+    }
+    header {
+      position: relative;
+      padding: 20px;
+      text-align: center;
+    }
+
+    header img {
+      max-width: 100%;
+    }
+
+    header .header-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: #FFFFFF;
+      font-size: 150px;
+      font-family: "Bodoni 72", sans-serif;
+      font-weight: bold;
+      text-shadow: 4px 4px 8px #af8b8c;
+      animation: moveText 4s ease-in-out infinite; /* 애니메이션 속성 추가 */
+    }
+
+      @keyframes moveText {
+      0% { transform: translate(-50%, -50%); }
+      50% { transform: translate(-50%, -30%); }
+      100% { transform: translate(-50%, -50%); }
+    }
+    
+    
+    .center-text {
+      text-align: center;
+      margin-top: 5px;
+      margin-bottom: 30px;
+      font-size: 30px;
+      font-family: 'Libre Bodoni', serif;
+      color: #8d5d51;
+    }
+    .filterable_cards {
+      display: flex;
+      margin-top: 25px;
+      margin-left: 50px;
+      margin-bottom: 60px;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    .card {
+      flex-basis: 300px;
+      height: 200;
+      background-color: #FFFFFF;
+      padding: 5px;
+      border-radius: 8px;
+      border: 3px solid #F6CED8;
+      cursor: pointer;
+      position: center;
+    }
+    .card img {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+      border-radius: 8px 8px 0 0;
+    }
+    .card_body {
+      padding:  15px 20px 20px;
+    }
+    .card_title {
+      font-size: 30px;
+      font-family: 'Libre Bodoni', serif;
+      color: #8d5d51;
+      text-align: center;
+      margin: 5px;
+    }
+    .card:active {
+    background-color: #F6CED8
+}
+
+    .container {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      flex-direction: column;
+      height: 400px;
+      margin-left: 70px;
+      margin-top: 30px;
+      margin-bottom: 0px;
+    }
+    
+    .square {
+      width: 300px;
+      height: 300px;
+      margin-left: 15px;
+      margin-right: 15px;
+      margin-top: 0px;
+    }
+    
+    .image {
+      width: 125%;
+      height: 125%;
+      object-fit: cover;
+    }
+
+        html, body {
+  margin: 0;
+  padding: 0;
+}
+
+#wrap {
+  min-height: 350px;
+  position: relative;
+  width: 100%; 
+  
+}
+
+section {
+  padding-bottom: 105px;
+}
+
+footer {
+  width: 100%;
+  height: 220px;
+  position: relative;
+  border-top: 1px solid #c4c4c4;
+  padding-top: 15px;
+  color: #8d5d51;
+  font-size: 11px;
+  margin-top: auto; 
+  text-align: center; 
+  background-color: #F6CED8;
+  position : absolute;
+bottom : 0;
+}
+
+
+footer a {
+  display: inline-block;
+  margin: 0 20px 10px 20px;
+  color: #8d5d51; font-size: 16px;
+}
+
+footer a:visited {
+  color: #8d5d51;
+}
+footer a:hover {
+  color: #FFFFFF;
+}
+
+footer p {
+  margin-top: 0; margin-bottom: 0;   
+}
+
+footer p span {
+  display: inline-block;
+  margin-left: 20px;
+}
+span
+{
+  font-family: "Bodoni 72", sans-serif;
+}
+.navbar {
+      height: 50px;
+      width:100%;
+      background-color: #F6CED8;
+      overflow: hidden;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      padding: 0 ;
+    }
+
+    .navbar a {
+      color: white;
+      text-decoration: none;
+      font-size: 20px;
+      margin-left: 10px;
+    }
+
+    .navbar i {
+      color: white;
+      margin-left: 10px;
+      font-size: 20px;
+    }
+
+    .navbar a:hover,
+    .navbar i:hover {
+      color: #7a493f;
+    }
+
+    @keyframes slide {
+      from {
+        left: -100px;
+        opecity: 0;
+      }
+      to {
+        left: 400px;
+      }
+
+</style>
+
+</head>
+<body>
+  <div class="navbar">
+    <div class="navbar_logo">
+    <ul>
+    <a href="메인페이지.html">Home</a>
+    <i class="fa-regular fa-house"></i>
+    <a href="about.html">About</a>
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <a href="#">Menu</a>
+    <i class="fa-solid fa-bars"></i>
+    <a href="#">WIFI</a>
+    <i class="fa-solid fa-wifi"></i>
+  </div>
+</div>
+  <header>
+    <img src="images/header.png">
+    <div class="header-text">
+      DEZOTE
+    </div>
+  </header>
+    <div class="center-text">
+      <br>
+      I'm obsessed with food.
+      <br><br>
+    </div>
+    <div class="filterable_cards">
+      <div class="card">
+        <a href="https://www.naver.com">
+        <img src="images/cookie.png">
+      </a>
+        <div class="card_body">
+          <h6 class="card_title">Cookie</h6>
+        </div>
+      </div>
+      <div class="card">
+        <a href="https://www.naver.com">
+        <img src="images/cake.png">
+        </a>
+        <div class="card_body">
+          <h6 class="card_title">Cake</h6>
+        </div>
+      </div>
+      <div class="card">
+        <a href="크로플.html">
+        <img src="images/croffle.png">
+        </a>
+        <div class="card_body">
+          <h6 class="card_title">Croffle</h6>
+        </div>
+      </div>
+      <div class="card">
+        <a href="https://www.naver.com">
+        <img src="images/shaved ice.png">
+        </a>
+        <div class="card_body">
+          <h6 class="card_title">Shaved ice</h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+    <div class="square">
+      <img class="image" src="images/1.png">
+    </div>
+    <div class="square">
+      <img class="image" src="images/2.png">
+    </div>
+    <div class="square">
+      <img class="image" src="images/3.png">
+    </div>
+    </div>
+
+        <div class="container">
+    <div class="square">
+      <img class="image" src="images/4.png">
+    </div>
+    <div class="square">
+      <img class="image" src="images/5.png">
+    </div>
+    <div class="square">
+      <img class="image" src="images/6.png">
+    </div>
+    </div>
+
+    <div class="container">
+    <div class="square">
+      <img class="image" src="images/7.png">
+    </div>
+    <div class="square">
+      <img class="image" src="images/8.png">
+    </div>
+    <div class="square">
+      <img class="image" src="images/9.png">
+    </div>
+    </div>
+    
+    <div class="text">
+      
+      <div id='wrap'>
+      <section>
+      </section>
+        <footer>
+              <span>
+              <br>
+              <br>
+              <h1> DEZOTE </h1>
+                <nav>
+                <a href='https://blog.naver.com/neonnite22' target='_blank'>instagram</a>
+                <a href='https://blog.naver.com/neonnite22' target='_blank'>blog</a>
+                </nav>
+              <p>
+              운영 시간 : 오전 8시 ~ 오후 9시 
+              </p>
+              <p>
+              점심 시간 : 오후 12시 ~ 1시
+              </p>
+              <p>
+              위치 : 경기도 의왕시 계원대학로 66번지 내손동 247-1 파라다이스 홀 7층
+              </p>
+              <p>
+              인덕원 사거리에서 안양농수산물도매시장 방향으로 직진하여 롯데마트에서 좌회전하면 우측에 위치  
+              </p> 
+            </span>
+          </p>
+      </footer>
+  </div>
+  </body>
+</html>
